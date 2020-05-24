@@ -5,10 +5,10 @@
  */
 package com.mvc.controller;
 
-import com.mvc.dao.loginDao;
 
+import com.mvc.bean.uloginBean;
+import com.mvc.dao.uloginDao;
 
-import com.mvc.bean.loginBean;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -18,32 +18,35 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ *
+ * @author kavii
+ */
+public class ULoginController extends HttpServlet {
 
-public class LoginController extends HttpServlet {
 
-  
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if(request.getParameter("asubmit")!=null)
+         if(request.getParameter("usubmit")!=null)
        {
                 String username = request.getParameter("uname");
                 String password = request.getParameter("psw");
                 
-                loginBean loginbean = new loginBean();
+                uloginBean uloginbean = new uloginBean();
                 
-                loginbean.setUsername(username);
-                loginbean.setPassword(password);
+                uloginbean.setUsername(username);
+                uloginbean.setPassword(password);
                 
-                loginDao logindao = new loginDao();
+                uloginDao ulogindao = new uloginDao();
                 
-                String authorize = logindao.authorizelogin(loginbean);
+                String authorize = ulogindao.authorizelogin(uloginbean);
                 
                 if(authorize.equals("SUCCESS LOGIN"))
                 {
                     HttpSession session=request.getSession();
-                    session.setAttribute("login", loginbean.getUsername());
-                    RequestDispatcher rd=request.getRequestDispatcher("AdminPage.jsp");
+                    session.setAttribute("ulogin", uloginbean.getUsername());
+                    RequestDispatcher rd=request.getRequestDispatcher("user.jsp");
                     rd.forward(request, response);
                 }
                 else{
@@ -53,10 +56,22 @@ public class LoginController extends HttpServlet {
                 }
        }
     
+        
+        
+        
+        
     }
-  
-
-    }
-
+    
     
 
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
+
+}

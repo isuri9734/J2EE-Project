@@ -83,117 +83,159 @@ body
           </nav>
   <%-- Navbar end --%>
         
-        
-        
-        
-        
-        <br><br><br><br>
-        <div class="container" style="opacity: 0.85">   
-         <!--div class="card bg-light" style="max-width: 100%;"-->
-         <div class="row">
-             <div class="col-sm-6">
-             <article class="card-body mx-auto" style="max-width: 65%;">
-                 <form action="uregistration.java" method="POST" >
-                     
-                     <h4 style="text-align:center; color: black; background-color: white; margin: 3%; padding: 2%;"> User Sign Up Form </h4>
-                     
-	<div class="form-group input-group">
-		<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="ufname" class="form-control" placeholder="Full name" type="text">
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-		 </div>
-        <input name="uemail" class="form-control" placeholder="Email address" type="email">
-    </div>
-    <!-- form-group// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-		</div>
-        <input name="upsw" class="form-control" placeholder="Create password" type="password">
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-		</div>
-        <input class="form-control" placeholder="Repeat password" type="password">
-    </div> <!-- form-group// -->                                      
-    <div class="form-group">
-        <button  name="usubmit" type="submit" class="btn btn-success btn-block" value="signup"> Create Account  </button>
-    </div> <!-- form-group// -->      
-    <p class="text-center" style="background-color: white; padding: 2%;">Have an account? <a href="login.jsp">Log In</a> </p>                                                                 
-</form>
-   </article>
-         <!--/div-->
-         <!-- card.// -->
-        <!--container end.//-->
-        
-        </div>
-             
-           <!--div class="vl"></div-->
-             
-             
-             <div class="col-sm-6">
-             <article class="card-body mx-auto" style="max-width: 65%;">
-                 <form action="jregistration.java" method="POST" >
-                     
-                     <h4 style="text-align:center; color: black; background-color: white; margin: 3%; padding: 2%;"> Sign Up Form </h4>
-                     
-	<div class="form-group input-group">
-		<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="jfname" class="form-control" placeholder="Full name" type="text">
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-		 </div>
-        <input name="jemail" class="form-control" placeholder="Email address" type="email">
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-		</div>
-    	<input name="jtele" class="form-control" placeholder="Phone number" type="text">
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-		</div>
-        <select class="form-control" name="jtype">
-			<option selected=""> Select type</option>
-                        <option>Catering</option>
-			<option>Designer</option>
-                        <option>Florist</option>
-			<option>Photographer</option>			
-                        <option>Venue Partner</option>
-                        
-		</select>
+  <br>
+  <div class="container">
+      <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+   
+    <li class="nav-item">
+      <a class="nav-link " data-toggle="tab" href="#ulogin">User</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " data-toggle="tab" href="#slogin">supplier</a>
+    </li>
+   
+  </ul>
+      <br>
+      <div class="tab-content">
+    <div id="ulogin" class="container tab-pane active">
+        <div class="container" style="opacity: 0.85"> 
+        <div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card">
+<header class="card-header">
+	<a href="login.jsp" class="float-right btn btn-outline-success mt-1">Log in</a>
+	<h4 class="card-title mt-2">User Sign up</h4>
+</header>
+<article class="card-body">
+<form>
+	<div class="form-row">
+		<div class="col form-group">
+			<label>First name </label>   
+		  	<input type="text" class="form-control" placeholder="">
+		</div> <!-- form-group end.// -->
+<!--		<div class="col form-group">
+			<label>Last name</label>
+		  	<input type="text" class="form-control" placeholder=" ">
+		</div>  form-group end.// -->
+	</div> <!-- form-row end.// -->
+	<div class="form-group">
+		<label>Email address</label>
+		<input type="email" class="form-control" placeholder="">
+		<small class="form-text text-muted">We'll never share your email with anyone else.</small>
 	</div> <!-- form-group end.// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-		</div>
-        <input name="jpsw" class="form-control" placeholder="Create password" type="password">
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-		</div>
-        <input class="form-control" placeholder="Repeat password" type="password">
-    </div> <!-- form-group// -->                                      
-    <div class="form-group">
-        <button name="jsubmit" type="submit" class="btn btn-success btn-block"> Create Account  </button>
+        
+        <div class="form-row">
+		<div class="form-group col-md-6">
+		  <label>Contact number</label>
+		  <input type="text" class="form-control">
+	</div>  <!--form-group end.// -->
+		<div class="form-group col-md-6">
+		  <label>Type</label>
+		  <select id="inputState" class="form-control">
+		    <option selected=""> Select</option>
+		      <option>Catering</option>
+		      <option>Designing</option>
+		      <option >Florist</option>
+		      <option>Photography</option>
+		      <option>Venue Partner</option>
+		  </select>
+		</div>  <!--form-group end.// 
+<!--	<div class="form-group">
+			<label class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="gender" value="option1">
+		  <span class="form-check-label"> Male </span>
+		</label>
+		<label class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="gender" value="option2">
+		  <span class="form-check-label"> Female</span>
+		</label>
+	</div>  form-group end.// -->
+
+	<div class="form-group">
+		<label>Create password</label>
+	    <input class="form-control" type="password">
+	</div> <!-- form-group end.// -->  
+        <div class="form-group"> <br><br><br><br>
+        <button type="submit" class="btn btn-success btn-block"> Register  </button>
     </div> <!-- form-group// -->      
-    <p class="text-center" style="background-color: white; padding: 2%;">Have an account? <a href="login.jsp">Log In</a> </p>                                                                 
+    <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
 </form>
-   </article>
-             </div>
-         </div></div>
+</article> <!-- card-body end .// -->
+<div class="border-top card-body text-center">Have an account? <a href="login.jsp" style="color: green;">Log In</a></div>
+</div> <!-- card.// -->
+</div> <!-- col.//-->
+
+</div> <!-- row.//-->
+
+
+</div> 
+<!--container end.//-->
+    </div>
+          
+          
+<div id="slogin" class="container tab-pane " style="opacity: 0.85">
+<!--        <div class="container" style="opacity: 0.85"> -->
+        <div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card">
+<header class="card-header">
+	<a href="login.jsp" class="float-right btn btn-outline-success mt-1">Log in</a>
+	<h4 class="card-title mt-2">Supplier Sign up</h4>
+</header>
+<article class="card-body">
+<form>
+	<div class="form-row">
+		<div class="col form-group">
+			<label>First name </label>   
+		  	<input type="text" class="form-control" placeholder="">
+		</div> <!-- form-group end.// -->
+
+	</div> <!-- form-row end.// -->
+	<div class="form-group">
+		<label>Email address</label>
+		<input type="email" class="form-control" placeholder="">
+		<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+	</div> <!-- form-group end.// -->
+
+	<div class="form-row">
+		<div class="form-group col-md-6">
+		  <label>Contact number</label>
+		  <input type="text" class="form-control">
+	</div>  <!--form-group end.// -->
+		<div class="form-group col-md-6">
+		  <label>Type</label>
+		  <select id="inputState" class="form-control">
+		    <option selected=""> Select</option>
+		      <option>Catering</option>
+		      <option>Designing</option>
+		      <option >Florist</option>
+		      <option>Photography</option>
+		      <option>Venue Partner</option>
+		  </select>
+		</div>  <!--form-group end.// 
+	</div>  form-row.// 
+	<div class="form-group">
+		<label>Create password</label>
+	    <input class="form-control" type="password">
+	</div> <!-- form-group end.// -->  
+    <div class="form-group">
+        <button type="submit" class="btn btn-success btn-block"> Register  </button>
+    </div> <!-- form-group// -->      
+    <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
+</form>
+</article> <!-- card-body end .// -->
+<div class="border-top card-body text-center">Have an account? <a href="login.jsp" style="color: green;">Log In</a></div>
+</div> <!-- card.// -->
+</div> <!-- col.//-->
+
+<!--</div>  row.//-->
+
+
+</div> 
+<!--container end.//-->
+    </div>
+      </div>
+  </div>
     </body>
 </html>

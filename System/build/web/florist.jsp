@@ -107,7 +107,7 @@
                              <h6>Star Rating</h6>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                           </li>
@@ -136,8 +136,8 @@
                           <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
                              <h6>Star Rating</h6>
                                         <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                           </li>
@@ -166,8 +166,8 @@
                           <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
                              <h6>Star Rating</h6>
                                         <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                           </li>
@@ -200,9 +200,9 @@
                           </li>
                           <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
                              <h6>Star Rating</h6>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                           </li>
@@ -232,7 +232,7 @@
                              <h6>Star Rating</h6>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                           </li>
@@ -261,8 +261,8 @@
                           <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
                              <h6>Star Rating</h6>
                                         <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                           </li>

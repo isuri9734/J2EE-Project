@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>loginBean</servlet-name>
-        <servlet-class>com.mvc.bean.loginBean</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>loginDao</servlet-name>
         <servlet-class>com.mvc.dao.loginDao</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>LoginController</servlet-name>
-        <servlet-class>com.mvc.controller.LoginController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>logout</servlet-name>
         <servlet-class>com.mvc.controller.logout</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>loginBean</servlet-name>
-        <url-pattern>/loginBean</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>loginDao</servlet-name>
         <url-pattern>/loginDao</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LoginController</servlet-name>
-        <url-pattern>/LoginController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>logout</servlet-name>

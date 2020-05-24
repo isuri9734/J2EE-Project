@@ -1,17 +1,27 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.mvc.dao;
 
-import com.mvc.bean.loginBean;
+import com.mvc.bean.sloginBean;
+import com.mvc.bean.uloginBean;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class loginDao {
-    public String authorizelogin(loginBean loginbean)
+/**
+ *
+ * @author kavii
+ */
+public class sloginDao {
+    
+    public String authorizelogin(sloginBean sloginbean)
     {
-        String username = loginbean.getUsername();
-        String password = loginbean.getPassword();
+        String username = sloginbean.getUsername();
+        String password = sloginbean.getPassword();
         
         String dbusername="";
         String dbpassword="";
@@ -19,7 +29,6 @@ public class loginDao {
         String url ="jdbc:mysql://localhost:3306/events";
         String name="root";
         String passwrd = "";
-        String status = "";
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
@@ -27,35 +36,30 @@ public class loginDao {
             
             PreparedStatement psmt = null;
             
-            psmt=con.prepareStatement("SELECT * FROM user WHERE UEmail=? and Password=?");
-            psmt.setString(1,username);
-            psmt.setString(2,password);
+            psmt=con.prepareStatement("SELECT * FROM supplier WHERE UEmail=? and Password=?");
+            psmt=setString(1,username);
+            psmt=setString(2,password);
             ResultSet rs=psmt.executeQuery();
             
             while(rs.next())
             {
-                System.out.println(rs.getString("username")+"sucess");
-                System.out.println(rs.getString("UEmail")+"Error");
                 dbusername=rs.getString("username");
                 dbpassword=rs.getString("password");
                 
                 if(username.equals(dbusername) && password.equals(dbpassword))
                 {
-                    status =  "SUCCESS LOGIN";
+                    return "SUCCESS LOGIN";
                 }
             }
             psmt.close();
             
             con.close();
-            return status;
         }
         catch(Exception e)
         {
-            //e.printStackTrace();
-            System.out.println("Not Found"+e.getMessage());
-            return "Wrong username and password";
+            e.printStackTrace();
         }
-        
+        return "Wrong username and password";
     }
 
     private PreparedStatement setString(int i, String username) {

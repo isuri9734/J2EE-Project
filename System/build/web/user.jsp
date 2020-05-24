@@ -15,7 +15,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Post create Page</title>
+        <title>UserPage</title>
         
         <link rel="stylesheet" type="text/css" href="css/postcreate.css">
         <%-- Latest compiled and minified CSS --%>
@@ -65,6 +65,9 @@
                 <span class="navbar-text">
                 <a class="nav-link" href="logout.jsp">Logout</a>
                </span>
+                <span class="navbar-text">
+                | meri@gmail.com 
+               </span>
             </div>
           </nav>
   <%-- Navbar end --%>
@@ -93,7 +96,7 @@
 
 		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		 </div>
-        <input name="fname" class="form-control" placeholder="Name" type="text" value=" " required>
+        <input name="fname" class="form-control" placeholder="" type="text" value=" " required>
     </div> <!-- form-group// -->
  
     
@@ -103,7 +106,7 @@
 		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
          </div>
     
-        <input name="email" class="form-control" placeholder="Email address" type="email" value="" required>
+        <input name="email" class="form-control" placeholder="" type="email" value="" required>
     </div> <!-- form-group// -->
 
     
@@ -112,7 +115,7 @@
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
-        <input name="psw" class="form-control" placeholder="Create password" type="password" value=""required>
+        <input name="psw" class="form-control" placeholder="" type="password" value=""required>
     </div> <!-- form-group// -->
 
     <div class="form-group">
